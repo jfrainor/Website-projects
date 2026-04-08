@@ -4,8 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrainoDev</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bienvenidos a mi Portafolio</h1>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img src="./assets/img/logo.jpg" alt="Logo FrainoDev" class="header__logo-img">
+            <div class="header__logo-text">FrainoDev</div>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#hero">Inicio</a></li>
+                <li class="header__nav-item"><a href="#about">Sobre mí</a></li>
+                <li class="header__nav-item"><a href="#experience">Experiencia</a></li>
+                <li class="header__nav-item"><a href="#projects">Proyectos</a></li>
+                <li class="header__nav-item"><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="hero" class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__greeting">
+                    <p>Hola, mi nombre es</p>
+                </div>
+                <h1 class="hero__name">José Fraino.</h1>
+                <h2 class="hero__title">Ingeniero en Informática | Desarrollador Web</h2>
+                <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deserunt vitae ipsa esse repellendus atque explicabo. Optio, maiores consectetur, fugiat ipsum sapiente sequi assumenda nulla nobis, aspernatur accusantium dolore velit?</p>
+                <div class="hero__buttons">
+                    <a href="#projects" class="btn hero__btn">Ver mi trabajo</a>
+                    <a href="#" class="btn hero__btn--secondary">Resumen CV</a>
+                </div>
+            </div>
+            <!-- <div class="hero__image">
+                <img class="hero__img" src="./assets/img/perfil.jpg" alt="Foto de José Fraino">
+            </div> -->
+        </div>
+    </main>
+    <section id="about" class="about">
+        <div class="about-container container">
+            <h2 class="about__title">Sobre Mí</h2>
+            <div class="about__layout">
+                <div class="about__content">
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, distinctio? Neque ab, possimus nisi blanditiis dolores excepturi fugit ea repellendus repudiandae. Vitae incidunt consectetur sint deleniti omnis ratione, aliquam sequi! Quisquam, maiores voluptatem. Doloribus saepe earum labore assumenda praesentium voluptas.</p>
+                </div>
+                <div class="about__image-block">
+                    <img class="about__img" src="./assets/img/perfil.jpg" alt="Foto de perfil">
+                </div>
+            </div>
+            <h3 class="about__subtitle">Algunas tecnologías con las que he trabajado recientemente:</h3>
+            <div class="about__skills-block">
+                <h4 class="about__skills-title">Skills / Habilidades</h4>
+                <div class="about__skills-container">
+                    <ul>
+                        <li class="about__skill">
+                            <span class="about__skill-name">HTML</span>
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--80">80%</div>
+                            </div>
+                        </li>
+                        <li class="about__skill">
+                            <span class="about__skill-name">CSS</span>
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--60">60%</div>
+                            </div>
+                        </li>
+                        <li class="about__skill">
+                            <span class="about__skill-name">JavaScript</span>
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--70">70%</div>
+                            </div>
+                        </li>
+                        <li class="about__skill">
+                            <span class="about__skill-name">SQL</span>
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--90">90%</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="experience">
+        <div class="container experience__container">
+            <h2 class="experience__title">Experiencia</h2>
+            <div class="experience__list">
+                <article class="experience__item card">
+                    <div class="experience__item-year">2022 - Actualidad</div>
+                    <div class="experience__item-detail">
+                        <h3>Desarrollador Web - Empresa X</h3>
+                        <p>Diseño y construcción de interfaces web modernas usando HTML, CSS y JavaScript. Optimicé experiencia de usuario y mejoré tiempos de carga en proyectos internos.</p>
+                    </div>
+                </article>
+                <article class="experience__item card">
+                    <div class="experience__item-year">2020 - 2022</div>
+                    <div class="experience__item-detail">
+                        <h3>Analista de Datos - Empresa Y</h3>
+                        <p>Gestión de bases de datos y análisis de información para soporte de decisiones. Implementé consultas SQL y automatizaciones para reportes mensuales.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="portfolio">
+        <div class="container portfolio__container">
+            <h2 class="portfolio__title">Proyectos</h2>
+            <div class="portfolio__featured">
+                <div class="portfolio__preview card">
+                    <div class="portfolio__preview-label">Preview</div>
+                </div>
+                <div class="portfolio__description card">
+                    <h3>Proyecto Destacado</h3>
+                    <p>Presentación breve del proyecto más relevante, con enfoque en los resultados, tecnologías usadas y el valor que entregó.</p>
+                    <a href="#projects" class="btn portfolio__cta">Ver detalles</a>
+                </div>
+            </div>
+            <div class="portfolio__other">
+                <div class="portfolio__other-top">
+                    <span>Otros proyectos</span>
+                    <!-- <a href="#projects" class="btn portfolio__view-all">Ver portafolio v2.0</a> -->
+                </div>
+                <div class="portfolio__grid">
+                    <div class="portfolio__project card">Proyecto 1</div>
+                    <div class="portfolio__project card">Proyecto 2</div>
+                    <div class="portfolio__project card">Proyecto 3</div>
+                    <div class="portfolio__project card">Proyecto 4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container contact__container">
+            <h2 class="contact__title">Contacto</h2>
+            <h3 class="contact__subtitle">¿Tienes un proyecto en mente?</h3>
+            <p class="contact__text">Estoy disponible para colaborar en desarrollos web, mejoras de UX/UI y soluciones tecnológicas. Conecta conmigo para hablar sobre tu próximo proyecto.</p>
+            <a href="mailto:tuemail@ejemplo.com" class="btn contact__button">Enviar correo</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">Gracias por visitar mi portafolio. Tambien me puedes encontrar por acá.</p>
+            <div class="footer__socials">
+                <i class="fa-brands fa-github">
+                    <a href="#"></a>
+                </i>
+                <i class="fa-brands fa-linkedin">
+                    <a href="#"></a>
+                </i>
+                <i class="fa-brands fa-instagram">
+                    <a href="#"></a>
+                </i>
+            </div>
+            <p class="footer__copyright">&copy; 2026 FrainoDev - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/2432bebf06.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

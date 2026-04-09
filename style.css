@@ -478,9 +478,21 @@ body {
     min-height: 320px;
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9));
+    background: linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9)), url(./assets/img/innovating.png);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
     color: #fff;
     border-radius: 20px;
+}
+
+.portfolio__preview:hover{
+    transform: translateY(-5px);
+    background:  url(./assets/img/innovating.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .portfolio__preview-label{
@@ -519,17 +531,81 @@ body {
 
 .portfolio__grid{
     display: grid;
-    gap: 16px;
+    gap: 18px;
 }
 
+.portfolio__grid :first-child{
+    background: linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9)), url(./assets/img/yp-website.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__grid :first-child:hover{
+    background: url(./assets/img/yp-website.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__grid :nth-child(2){
+    background: linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9)), url(./assets/img/contador.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__grid :nth-child(2):hover{
+    background: url(./assets/img/contador.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.portfolio__grid :nth-child(3){
+    background:linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9)), url(./assets/img/contador.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__grid :nth-child(3):hover{
+    background: url(./assets/img/contador.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__grid :last-child{
+    background: linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9)), url(./assets/img/contador.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__grid :last-child:hover{
+    background: url(./assets/img/contador.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
 .portfolio__project{
-    min-height: 180px;
+    min-height: 220px;
     display: grid;
     place-items: center;
     color: #fff;
-    background: rgba(37,99,235,0.2);
     border-radius: 18px;
     padding: 20px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.portfolio__project:hover{
+    transform: translateY(-5px);
+    color:transparent;
 }
 
 .contact{

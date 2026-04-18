@@ -532,6 +532,7 @@ body {
 .portfolio__grid{
     display: grid;
     gap: 18px;
+    font-weight: bold;
 }
 
 .portfolio__grid :first-child{
@@ -564,28 +565,28 @@ body {
 
 
 .portfolio__grid :nth-child(3){
-    background:linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9)), url(./assets/img/contador.png);
+    background:linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9)), url(./assets/img/chat-box.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .portfolio__grid :nth-child(3):hover{
-    background: url(./assets/img/contador.png);
+    background: url(./assets/img/chat-box.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .portfolio__grid :last-child{
-    background: linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9)), url(./assets/img/contador.png);
+    background: linear-gradient(135deg, rgba(37,99,235,0.25), rgba(15,23,42,0.9)), url(./assets/img/bio-links.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .portfolio__grid :last-child:hover{
-    background: url(./assets/img/contador.png);
+    background: url(./assets/img/bio-links.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

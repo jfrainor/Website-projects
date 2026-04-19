@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrainoDev</title>
+    <title>BitFraino</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/assets/img/icon.svg">
 </head>
 <body>
     <header class="header">
@@ -12,7 +14,7 @@
         <label for="open-menu" class="header__open-nav-button" role="button">=</label>
         <div class="header__logo-container">
             <img src="./assets/img/logo.jpg" alt="Logo FrainoDev" class="header__logo-img">
-            <div class="header__logo-text">FrainoDev</div>
+            <div class="header__logo-text">BitFraino</div>
         </div>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -50,11 +52,10 @@
             <h2 class="about__title">Sobre Mí</h2>
             <div class="about__layout">
                 <div class="about__content">
-                    <p class="about__text">¡Hola! soy José Fraino y me apasiona la tecnología e innovación. Mi interés general por la 
+                    <p class="about__text">Mi interés general por la 
                         tecnología comenzó desde que vi clases de computación en la escuela. Al decidir explorar más ese mundo,
                         estudié Ingeniería en Informática en la Universidad 
-                        Rafael Belloso Chacín, donde me gradué en el año 2024. Áreas como el desarrollo web, desarrollo de videojuegos y 
-                        el proceso de creación de software en general, fué lo mas destacable para mí.</p><br>
+                        Rafael Belloso Chacín, donde me gradué en el año 2024. Áreas como la Inteligencia Artificial, el Desarrollo de Software y la Programación de Videojuegos, fué lo mas destacable para mí.</p><br>
                     <p>Desde entonces me he desempeñado en la creación de sitios y aplicaciones web para resolver problemáticas, avanzando hasta el día de hoy. He tenido la 
                         la oportunidad de trabajar en distintos proyectos, enfocándome en el frontend. Mi principal objetivo actual es crear 
                         productos y experiencias digitales accesibles e inclusivas, siempre buscando aprender nuevas rutas el área de desarrollo.</p>
@@ -108,16 +109,15 @@
                         <p>He desarrollado aplicaciones y páginas web dinámicas utilizando tecnologías como JavaScript, PHP, HTML y CSS, 
                         creando soluciones interactivas y responsivas para diversos clientes. Asi mismo, aplico 
                         estrategias de desarrollo de software ágiles, incluyendo planificación, pruebas y optimización, para entregar 
-                        productos de alta calidad que cumplan con requisitos funcionales y de rendimiento.</p>
+                        productos que cumplan con requisitos funcionales y de rendimiento.</p>
                     </div>
                 </article>
                 <article class="experience__item card">
                     <div class="experience__item-year">Enero 2024 - Marzo 2024</div>
                     <div class="experience__item-detail">
                         <h3>Pasante de Soporte Técnico Especializado - Gerencia de Servicios AIT Occidente PDVSA</h3>
-                        <p>Me enfoqué en la instalación y configuración de aplicaciones especializadas para simulaciones sísmicas, 
-                        lo que garantizó el funcionamiento óptimo de herramientas críticas para análisis geofísicos. Resolví problemas 
-                        complejos en hardware y software, diagnosticando y reparando equipos para minimizar interrupciones operativas. 
+                        <p>Me enfoqué en la instalación y configuración de aplicaciones especializadas para simulaciones sísmicas.
+                        Resolví problemas complejos en hardware y software, diagnosticando y reparando equipos para minimizar interrupciones operativas. 
                         Utilicé PL/SQL Developer, optimizando consultas y asegurando la integridad de datos en proyectos de exploración 
                         petrolera.</p>
                     </div>
@@ -156,7 +156,7 @@
         <div class="container contact__container">
             <h2 class="contact__title">Contacto</h2>
             <h3 class="contact__subtitle">¿Tienes un proyecto en mente?</h3>
-            <p class="contact__text">Estoy disponible para colaborar en desarrollos web, mejoras de UX/UI y soluciones tecnológicas. Conecta conmigo para hablar sobre tu próximo proyecto.</p>
+            <p class="contact__text">Estoy disponible para colaborar en desarrollos web y soluciones tecnológicas. Conecta conmigo para conversar sobre tu próximo proyecto.</p>
             <a href="mailto:frainorjoseg@gmail.com" class="btn contact__button">Enviar correo</a>
         </div>
     </section>
@@ -164,19 +164,23 @@
         <div class="container footer__container">
             <p class="footer__text">Gracias por visitar mi portafolio. Tambien me puedes encontrar por acá.</p>
             <div class="footer__socials">
-                <i class="fa-brands fa-github">
-                    <a href="https://github.com/jfrainor"></a>
-                </i>
-                <i class="fa-brands fa-linkedin">
-                    <a href="https://www.linkedin.com/in/jose-fraino-1523a522a/"></a>
-                </i>
-                <i class="fa-brands fa-instagram">
-                    <a href="#"></a>
-                </i>
+                <a href="https://github.com/jfrainor">
+                     <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jose-fraino-1523a522a/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                 <a href="#">
+                    <i class="fa-brands fa-instagram">
+                    </i>
+                 </a>
             </div>
-            <p class="footer__copyright">&copy; 2026 FrainoDev - Todos los derechos reservados.</p>
+            <p class="footer__copyright">&copy; <span id="year"></span> BitFraino. Desarrollado por José Fraino </p>
         </div>
     </footer>
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="https://kit.fontawesome.com/2432bebf06.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
